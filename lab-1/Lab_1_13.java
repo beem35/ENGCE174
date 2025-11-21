@@ -12,12 +12,12 @@ public class Lab_1_13 {
         for (int i = 0; i < R; i++) {
             for (int j = 0; j < C; j++) {
                 dashBoard[i][j] = myScanner.nextInt();
-                if(dashBoard[i][j] == 1){
+                if (dashBoard[i][j] == 1) {
                     count++;
                 }
             }
         }
-        System.out.printf("จำนวนเซิร์ฟเวอร์ที่ Online : %d",count);
+        System.out.printf("จำนวนเซิร์ฟเวอร์ที่ Online : %d", count);
         myScanner.close();
     }
 }
