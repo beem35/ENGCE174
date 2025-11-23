@@ -18,12 +18,16 @@ public class Lab_2_3 {
         Scanner myScanner = new Scanner(System.in);
         System.out.printf("Input loop of Students : ");
         int n = myScanner.nextInt();
+        String id;
+        String name;
         Student[] ss = new Student[n];
         for (int i = 0; i < n; i++) {
+            myScanner.nextLine();
             System.out.printf("Input Student ID : ");
-            String id = myScanner.nextLine();
+            id = myScanner.nextLine();
+            
             System.out.printf("Input Student Name : ");
-            String name = myScanner.nextLine();
+            name = myScanner.nextLine();
             ss[i] = new Student(id, name);
         }
         System.out.println("Total students: " + Student.studentCount);
