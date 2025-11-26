@@ -1,23 +1,6 @@
 import java.util.Scanner;
 
 public class Lab_2_5 {
-    static class Rectangle {
-        private double width;
-        private double height;
-
-        public Rectangle(double width, double height) {
-            this.height = height;
-            this.width = width;
-        }
-
-        public double getArea() {
-            return this.width * this.height;
-        }
-
-        public double getPerimeter() {
-            return 2 * (this.width + this.height);
-        }
-    }
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
@@ -29,5 +12,23 @@ public class Lab_2_5 {
         System.out.printf("Area : %.2f \n", rec.getArea());
         System.out.printf("Perimeter : %.2f ", rec.getPerimeter());
         myScanner.close();
+    }
+}
+
+class Rectangle {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.height = height;
+        this.width = width;
+    }
+
+    public double getArea() {
+        return this.width * this.height;
+    }
+
+    public double getPerimeter() {
+        return 2 * (this.width + this.height);
     }
 }

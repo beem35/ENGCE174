@@ -1,12 +1,27 @@
 import java.util.Scanner;
 
 public class Lab_2_4 {
-    static class Student {
+    
+
+    public static void main(String[] args) {
+        Scanner myScanner = new Scanner(System.in);
+        System.out.printf("Input Student Name : ");
+        String name = myScanner.nextLine();
+        System.out.printf("Input Midterm Score : ");
+        int mid = myScanner.nextInt();
+        System.out.printf("Input Final Score : ");
+        int fin = myScanner.nextInt();
+        Student4 s1 = new Student4(name, mid, fin);
+        s1.displaySummary();
+        myScanner.close();
+    }
+}
+class Student4 {
         private int midtermScore;
         private int finalScore;
         private String name;
 
-        public Student(String name, int mid, int fin) {
+        public Student4(String name, int mid, int fin) {
             this.midtermScore = mid;
             this.finalScore = fin;
             this.name = name;
@@ -25,17 +40,3 @@ public class Lab_2_4 {
 
         }
     }
-
-    public static void main(String[] args) {
-        Scanner myScanner = new Scanner(System.in);
-        System.out.printf("Input Student Name : ");
-        String name = myScanner.nextLine();
-        System.out.printf("Input Midterm Score : ");
-        int mid = myScanner.nextInt();
-        System.out.printf("Input Final Score : ");
-        int fin = myScanner.nextInt();
-        Student s1 = new Student(name, mid, fin);
-        s1.displaySummary();
-        myScanner.close();
-    }
-}

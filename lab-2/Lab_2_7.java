@@ -8,7 +8,7 @@ public class Lab_2_7 {
         String name = myScanner.nextLine();
         System.out.printf("Balan  : ");
         double balance = myScanner.nextDouble();
-        BankAccount bAccount = new BankAccount(name, balance);
+        BankAccount_2 bAccount = new BankAccount_2(name, balance);
         System.out.printf("withdraw [1] : ");
         double amount1 = myScanner.nextDouble();
         System.out.printf("withdraw [2] : ");
@@ -20,11 +20,11 @@ public class Lab_2_7 {
     }
 }
 
-class BankAccount {
+class BankAccount_2 {
     private String ownerName;
     private double balance;
 
-    public BankAccount(String ownerName, double balance) {
+    public BankAccount_2(String ownerName, double balance) {
         this.ownerName = ownerName;
         this.balance = balance;
     }

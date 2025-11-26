@@ -14,7 +14,7 @@ public class Lab_2_9 {
         String zip = myScanner.nextLine();
 
         Address add = new Address(street, city, zip);
-        Student stu = new Student(name, add);
+        Student5 stu = new Student5(name, add);
         stu.displayProfile();
         myScanner.close();
     }
@@ -37,11 +37,11 @@ class Address {
     }
 }
 
-class Student {
+class Student5 {
     private String name;
     private Address address;
 
-    public Student(String name, Address address) {
+    public Student5(String name, Address address) {
         this.name = name;
         this.address = address;
     }

@@ -12,7 +12,7 @@ public class Lab_2_12 {
         String nameStu = myScanner.nextLine();
 
         Course cou = new Course(id, nameCou);
-        Student stu = new Student(nameStu, cou);
+        Student6 stu = new Student6(nameStu, cou);
         System.out.print("---------------\n");
         stu.displayEnrollment();
         myScanner.close();
@@ -34,11 +34,11 @@ class Course {
     }
 }
 
-class Student {
+class Student6 {
     private String studentName;
     private Course enrolledCourse;
 
-    public Student(String stu, Course enroll) {
+    public Student6(String stu, Course enroll) {
         this.enrolledCourse = enroll;
         this.studentName = stu;
     }

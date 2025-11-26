@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class Lab_2_6 {
-    
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
@@ -17,22 +16,23 @@ public class Lab_2_6 {
         myScanner.close();
     }
 }
+
 class BankAccount {
-        private String ownerName;
-        private double balance;
+    private String ownerName;
+    private double balance;
 
-        public BankAccount(String ownerName, double balance) {
-            this.ownerName = ownerName;
-            this.balance = balance;
-        }
-
-        public void deposit(double amount) {
-            this.balance += amount;
-        }
-
-        public void displaySummary() {
-            System.out.printf("----------------\n", ownerName);
-            System.out.printf("Owner : %s\n", ownerName);
-            System.out.printf("Balance : %.2f", balance);
-        }
+    public BankAccount(String ownerName, double balance) {
+        this.ownerName = ownerName;
+        this.balance = balance;
     }
+
+    public void deposit(double amount) {
+        this.balance += amount;
+    }
+
+    public void displaySummary() {
+        System.out.printf("----------------\n", ownerName);
+        System.out.printf("Owner : %s\n", ownerName);
+        System.out.printf("Balance : %.2f", balance);
+    }
+}

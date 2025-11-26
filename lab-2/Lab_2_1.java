@@ -1,10 +1,6 @@
 import java.util.Scanner;
 
 public class Lab_2_1 {
-    static class Student {
-        String studentID;
-        String name;
-    }
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
@@ -20,4 +16,9 @@ public class Lab_2_1 {
         System.out.println(s1.name);
         myScanner.close();
     }
+}
+
+class Student {
+    String studentID;
+    String name;
 }

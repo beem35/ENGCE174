@@ -1,15 +1,6 @@
 import java.util.Scanner;
 
 public class Lab_2_2 {
-    static class Student {
-        String studentID;
-        String name;
-        public void displayInfo() {
-            System.out.println("Student information");
-            System.out.println(this.studentID);
-            System.out.println(this.name);
-        }
-    }
 
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
@@ -17,10 +8,21 @@ public class Lab_2_2 {
         String id = myScanner.nextLine();
         System.out.printf("Input Student Name : ");
         String name = myScanner.nextLine();
-        Student s1 = new Student();
+        Student2 s1 = new Student2();
         s1.studentID = id;
         s1.name = name;
         s1.displayInfo();
         myScanner.close();
+    }
+}
+
+class Student2 {
+    String studentID;
+    String name;
+
+    public void displayInfo() {
+        System.out.println("Student information");
+        System.out.println(this.studentID);
+        System.out.println(this.name);
     }
 }
