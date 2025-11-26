@@ -20,7 +20,7 @@ public class Lab_1_14 {
 
         int targetR = myScanner.nextInt();
         int targetC = myScanner.nextInt();
-        count = checkMine(mine, targetR, targetC, targetR, targetC);
+        count = checkMine(mine, targetR, targetC, R, C);
 
         if (mine[targetR][targetC] == 1) {
             System.out.printf("mine");
@@ -38,7 +38,7 @@ public class Lab_1_14 {
         for (int i = 0; i < 8; i++) {
             int newR = targetR + dr[i];
             int newC = targetC + dc[i];
-            if (0 <= newR && 0 <= newC) {
+            if (0 <= newR && newR < R && 0 <= newC && newC < C) {
                 if (mine[newR][newC] == 1) {
                     count += 1;
                 }
