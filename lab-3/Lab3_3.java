@@ -9,7 +9,7 @@ public class Lab3_3 {
         String pass2 = myScanner.nextLine();
         UserV2 pass = new UserV2(pass1);
         pass.setPassword(pass2);
-        System.out.printf("Output : %s",pass.getPassword());
+        System.out.printf("Output : %s", pass.getPassword());
         myScanner.close();
     }
 }
@@ -27,7 +27,7 @@ class UserV2 {
 
     public void setPassword(String newPassword) {
         int length = newPassword.length();
-        
+
         if (length >= 8) {
             this.password = newPassword;
             System.out.printf("Password updated.\n");
