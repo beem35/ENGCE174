@@ -34,4 +34,11 @@ class Student3 {
         studentCount++;
     }
 
+    public String getId(){
+        return this.studentID;
+    }
+
+    public String getname(){
+        return this.name;
+    }
 }

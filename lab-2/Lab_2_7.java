@@ -41,4 +41,12 @@ class BankAccount_2 {
     public void displayBalance() {
         System.out.println("Balance : " + this.balance);
     }
+
+    public double getbalance(){
+        return this.balance;
+    }
+
+    public String getownerName(){
+        return this.ownerName;
+    }
 }

@@ -34,6 +34,10 @@ class Product {
         this.price = price;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
 }
 
 class ShoppingCart {

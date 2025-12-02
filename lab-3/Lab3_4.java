@@ -10,8 +10,10 @@ public class Lab3_4 {
             System.out.printf("[%d]Name : ", i + 1);
             String name = myScanner.nextLine();
             ProductV2 product = new ProductV2(name);
+            product.getName();
         }
         System.out.printf("Product count : %d", ProductV2.getProductCount());
+        myScanner.close();
     }
 }
 
