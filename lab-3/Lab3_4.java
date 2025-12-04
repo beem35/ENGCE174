@@ -5,8 +5,8 @@ public class Lab3_4 {
         Scanner myScanner = new Scanner(System.in);
         System.out.printf("Number list : ");
         int N = myScanner.nextInt();
+        myScanner.nextLine();
         for (int i = 0; i < N; i++) {
-            myScanner.next();
             System.out.printf("[%d]Name : ", i + 1);
             String name = myScanner.nextLine();
             ProductV2 product = new ProductV2(name);
