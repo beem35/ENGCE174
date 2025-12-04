@@ -16,7 +16,6 @@ public class Lab3_6 {
         myScanner.close();
     }
 }
-
 class BankAccount_lab3 {
     private double balance;
 

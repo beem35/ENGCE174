@@ -11,7 +11,6 @@ public class Lab3_12 {
         double tax = myScanner.nextDouble();
         System.out.printf("RaiseAmount : ");
         double Raise = myScanner.nextDouble();
-
         EmployeeV3 emp = new EmployeeV3(name, salary);
         System.out.printf("Tax(Before) : %.2f\n", emp.calculateTax(tax));
         emp.giveRaise(Raise);
@@ -19,12 +18,9 @@ public class Lab3_12 {
         myScanner.close();
     }
 }
-
 class EmployeeV3 {
-
     private String name;
     private double monthlySalary;
-
     public EmployeeV3(String name, double monthlySalary) {
         this.name = name;
         if (monthlySalary > 0) {
@@ -33,12 +29,10 @@ class EmployeeV3 {
             this.monthlySalary = 0;
         }
     }
-
     public String getName() {
 
         return this.name;
     }
-
     public void giveRaise(double amount) {
         if (amount > 0) {
             this.monthlySalary += amount;
@@ -47,11 +41,9 @@ class EmployeeV3 {
             System.out.printf("Invalid amount.\n");
         }
     }
-
     private double getAnnualSalary() {
         return this.monthlySalary * 12;
     }
-
     public double calculateTax(double taxRate) {
         return getAnnualSalary() * taxRate;
     }

@@ -26,11 +26,8 @@ public class Lab3_10 {
         myScanner.close();
     }
 }
-
 class SystemLogger {
-
     private static int currentLogLevel = 1;
-
     private static String getLevelName(int level) {
         if (level == 1) {
             return "INFO";
@@ -42,7 +39,6 @@ class SystemLogger {
             return "UNKNOWN";
         }
     }
-
     public static void setLogLevel(int newLevel) {
         if (newLevel <= 3 && newLevel >= 1) {
             currentLogLevel = newLevel;
@@ -51,11 +47,9 @@ class SystemLogger {
             System.out.printf("Invalid log level.\n");
         }
     }
-
     public static void log(int messageLevel, String message) {
         if (messageLevel >= currentLogLevel) {
             System.out.printf("[%s]: %s\n", getLevelName(messageLevel), message);
         }
-
     }
 }

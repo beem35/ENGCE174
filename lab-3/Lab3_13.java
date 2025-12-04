@@ -26,12 +26,9 @@ public class Lab3_13 {
         myScanner.close();
     }
 }
-
 class LicenseManager {
-
     private static int maxLicenses = 10;
     private static int usedLicenses = 0;
-
     public static void setMax(int max) {
         if (max > 0) {
             if (max > usedLicenses) {
@@ -44,7 +41,6 @@ class LicenseManager {
             System.out.printf("Invalid max value.\n");
         }
     }
-
     public static boolean checkOut() {
         if (usedLicenses < maxLicenses) {
             usedLicenses += 1;
@@ -55,7 +51,6 @@ class LicenseManager {
         }
         return false;
     }
-
     public static void checkIn() {
         if (usedLicenses > 0) {
             usedLicenses -= 1;
@@ -64,7 +59,6 @@ class LicenseManager {
             System.out.printf("Nothing to check-in.\n");
         }
     }
-
     public static void displayStatus() {
         System.out.printf("Used : %d\n", usedLicenses);
         System.out.printf("Available : %d\n", maxLicenses - usedLicenses);

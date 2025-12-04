@@ -27,33 +27,25 @@ public class Lab3_15 {
         myScanner.close();
     }
 }
-
 class UserV4 {
-
     private String username;
     private int failedAttempts;
     private boolean isLocked;
-
     private static int maxAttempts = 3;
-
     public UserV4(String username) {
         this.username = username;
         this.failedAttempts = 0;
         this.isLocked = false;
     }
-
     public String getUsername() {
         return this.username;
     }
-
     public boolean isLocked() {
         return isLocked;
     }
-
     public int getFailedAttempts() {
         return failedAttempts;
     }
-
     public static void setPolicy(int max) {
         if (max > 0) {
             maxAttempts = max;
@@ -61,7 +53,6 @@ class UserV4 {
             System.out.printf("Invalid policy\n");
         }
     }
-
     public void login(String password) {
         if (isLocked == true) {
             System.out.printf("Account is locked.\n");

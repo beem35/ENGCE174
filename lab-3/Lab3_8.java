@@ -34,7 +34,6 @@ public class Lab3_8 {
 class InventoryItem {
     private String productName;
     private int stock;
-
     public InventoryItem(String productName, int initialStock) {
         this.productName = productName;
         if (initialStock >= 0) {
@@ -43,15 +42,12 @@ class InventoryItem {
             this.stock = 0;
         }
     }
-
     public String getProductName() {
         return this.productName;
     }
-
     public int getStock() {
         return this.stock;
     }
-
     public void addStock(int amount) {
         if (amount > 0) {
             System.out.printf("Stock added.\n");
@@ -60,7 +56,6 @@ class InventoryItem {
             System.out.printf("Invalid amount.\n");
         }
     }
-
     public void sellStock(int amount) {
         if (amount > 0) {
             if (amount <= stock) {

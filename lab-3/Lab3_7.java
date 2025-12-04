@@ -20,20 +20,16 @@ public class Lab3_7 {
 class Employee {
     private String employeeid;
     private String department;
-
     public Employee(String employeeid, String department) {
         this.employeeid = employeeid;
         this.department = department;
     }
-
     public String getEmployeeid() {
         return this.employeeid;
     }
-
     public String getDepartment() {
         return this.department;
     }
-
     public void setDepartment(String newDepartment) {
         this.department = newDepartment;
     }

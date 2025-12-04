@@ -45,12 +45,9 @@ public class Lab3_14 {
         myScanner.close();
     }
 }
-
 class BankAccountV5 {
-
     private double balance;
     private static int totalTransactionCount = 0;
-
     public BankAccountV5(double initialDeposit) {
         if (initialDeposit >= 0) {
             this.balance = initialDeposit;
@@ -60,11 +57,9 @@ class BankAccountV5 {
         totalTransactionCount = 0;
         System.out.printf("Account created.\n");
     }
-
     public double getBalance() {
         return this.balance;
     }
-
     public void deposit(double amount) {
         if (amount > 0) {
             this.balance += amount;
@@ -74,7 +69,6 @@ class BankAccountV5 {
             System.out.printf("Invalid amount\n");
         }
     }
-
     public void withdraw(double amount) {
         if (amount > 0) {
             if (amount <= this.balance) {
@@ -88,7 +82,6 @@ class BankAccountV5 {
             System.out.printf("Invalid amount\n");
         }
     }
-
     public static int getTotalTransactionCount() {
         return totalTransactionCount;
     }
