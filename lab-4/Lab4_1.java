@@ -24,25 +24,17 @@ public class Lab4_1 {
         myScanner.close();
     }
 }
-
 class Bookv2 {
-    
     private String title;
     private String author;
-
-    
     public Bookv2(String title) {
         this.title = title;
         this.author = "Unknown";
     }
-
-    
     public Bookv2(String title, String author) {
         this.title = title;
         this.author = author;
     }
-
-    
     public void displayInfo() {
         System.out.printf("Title: %s, Author: %s\n",this.title ,this.author);
     }

@@ -30,7 +30,6 @@ class EmployeeV3 {
         }
     }
     public String getName() {
-
         return this.name;
     }
     public void giveRaise(double amount) {

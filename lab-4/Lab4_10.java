@@ -2,7 +2,7 @@ public class Lab4_10 {
 
 }
 
-class SystemLogger {
+class SystemLoggerV2 {
 
     private static int currentLogLevel = 1;
 

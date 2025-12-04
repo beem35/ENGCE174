@@ -45,10 +45,12 @@ class SystemConfig {
         return instance;
     }
     public String getServerUrl() {
-
         return this.serverUrl;
     }
     public void setServerUrl(String url) {
+        if (url == null || url.isEmpty()) {
+            System.out.println("Error: URL is Empty");
+        }
         this.serverUrl = url;
     }
     public int getMaxConnections() {
