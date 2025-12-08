@@ -1,3 +1,4 @@
+package lab4_15;
 import java.util.Arrays;
 import java.util.Scanner;
 
