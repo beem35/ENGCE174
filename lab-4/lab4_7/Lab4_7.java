@@ -13,15 +13,24 @@ public class Lab4_7 {
         Resource r1 = new Resource(id1);
         Resource r2 = new Resource(id2);
         Resource r3 = new Resource(id3);
-        r1.getid();
-        r2.getid();
-        r3.getid();
+        System.out.printf("ID 1 : %s \n",r1.getid());
+        System.out.printf("ID 2 : %s \n",r2.getid());
+        System.out.printf("ID 3 : %s \n",r3.getid());
         r1 = null;
         r2 = null;
         System.gc();
+        waitForGC();
         r3 = null;
         System.gc();
+        waitForGC();
         myScanner.close();
+    }
+    private static void waitForGC() {
+        try {
+            Thread.sleep(1000); // รอ 1 วินาที
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
 
@@ -40,7 +49,10 @@ class Resource {
 
     @Override
     protected void finalize() throws Throwable {
-        super.finalize();
-        System.out.printf("Resource [%s] finalized (destroyed).\n", id);
+        try{
+            System.out.printf("Resource [%s] finalized (destroyed).\n", id);
+        } finally {
+            super.finalize();
+        }
     }
 }
