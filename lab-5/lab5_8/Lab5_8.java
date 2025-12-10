@@ -21,7 +21,8 @@ public class Lab5_8 {
         persons[1] = employee;
         for (int i = 0; i < 2; i++) {
             if (persons[i] instanceof Employee) {
-                employee.applyBonus(1000.0);
+                Employee emp = (Employee) persons[i];
+                emp.applyBonus(1000.0);
             }
             System.out.println(persons[i].getStatus());
         }

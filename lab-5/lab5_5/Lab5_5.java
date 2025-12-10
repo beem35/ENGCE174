@@ -17,7 +17,7 @@ public class Lab5_5 {
         shapes[0] = circle;
         shapes[1] = rectangle;
         for (int i = 0; i < 2; i++) {
-            System.out.println("[" + (i + 1) + "] " + shapes[i].name + " : " + shapes[i].calcuateArea());
+            System.out.printf("[%d] %s : %.2f \n", i + 1, shapes[i].name, shapes[i].calcuateArea());
         }
         myScanner.close();
     }

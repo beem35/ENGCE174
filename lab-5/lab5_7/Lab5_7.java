@@ -71,6 +71,6 @@ class Manager extends Employee {
 class PayrollProcessor {
 
     public static void process(Employee e) {
-        System.out.println(e.name + " total pay: " + e.calculatePay());
+        System.out.printf("%s total pay: %.2f\n",e.name,e.calculatePay());
     }
 }
