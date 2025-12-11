@@ -18,7 +18,14 @@ public class Lab4_15 {
         for (int i = 0; i < N; i++) {
             System.out.printf("Log [%d] : ", i + 1);
             String logs = myScanner.nextLine();
-            auditRecord = auditRecord.addMessage(logs);
+            if (logs.equalsIgnoreCase("set_policy")) {
+                System.out.printf("Max : ");
+                max = myScanner.nextInt();
+                AuditRecord.setMaxMessages(max);
+                myScanner.nextLine();
+            } else {
+                auditRecord = auditRecord.addMessage(logs);
+            }
         }
         auditRecord.displayLog();
         myScanner.close();
