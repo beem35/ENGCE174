@@ -7,7 +7,7 @@ public class Lab5_4 {
         Scanner myScanner = new Scanner(System.in);
         System.out.print("Color: ");
         String color = myScanner.nextLine();
-        System.out.print("Color: ");
+        System.out.print("Wheels: ");
         int wheels = myScanner.nextInt();
         Car car = new Car(color, wheels);
         car.displayDetails();
